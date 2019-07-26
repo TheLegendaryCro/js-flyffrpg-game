@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="RPG">
+    <meta name=v iewport content="width=device-width, initial-scale=1">
+    <title>RPG Example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/gamemanager.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script> </head>
+
+<body>
+    <div class="header">
+        <p>Play this example RPG arena game!</p>
+        <h2>Choose your character!</h2>
+    </div>
+    <div class="interface">
+        <a href="#" onclick="GameManager.setGameStart('Warrior')">
+            <img src="img/avatar-player/warrior.jpg" alt="warrior">
+            <div>
+                <h3>Templar</h3>
+                <p>Templars have higher health and stamina, however their strength also makes them slower and clumsier.</p>
+            </div>
+        </a>
+        <a href="#" onclick="GameManager.setGameStart('Rogue')">
+            <img src="img/avatar-player/rogue.jpg" alt="rogue">
+            <div>
+                <h3>Rogues</h3>
+                <p>Rogues are fast and have high stamina and speed which make up for their lack of strength and health.</p>
+            </div>
+        </a>
+        <a href="#" onclick="GameManager.setGameStart('Mage')">
+            <img src="img/avatar-player/mage.jpg" alt="mage">
+            <div>
+                <h3>Mage</h3>
+                <p>Mages are glass canons which put all their effort into spells. This means they slack on everything else.</p>
+            </div>
+        </a>
+        <a href="#" onclick="GameManager.setGameStart('Hunter')">
+            <img src="img/avatar-player/hunter.jpg" alt="hunter">
+            <div>
+                <h3>Ranger</h3>
+                <p>Rangers are well rounded fighters that focus on evening out their skills. No strengths or weaknesses.</p>
+            </div>
+        </a>
+    </div>
+    <div class="actions"> </div>
+    <div class="arena"> </div>
+    <div class="enemy"> </div>
+</body>
+
+</html>
